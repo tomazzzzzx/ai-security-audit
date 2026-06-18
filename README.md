@@ -1,17 +1,19 @@
-# Ai Security Audit
+# AI Security Audit
 
-AI model security auditing toolkit.
+AI model security auditing toolkit: adversarial robustness, data poisoning, model extraction, privacy leakage.
 
-## Audits
-- Adversarial robustness (PGD, C&W, AutoAttack)
-- Data poisoning detection
-- Model extraction resistance
-- Privacy leakage (membership inference, model inversion)
+## Audit Suites
+- **Adversarial Robustness**: PGD, C&W, AutoAttack
+- **Data Poisoning**: Label flip, backdoor, dirty label detection
+- **Model Extraction**: Membership inference, model inversion attacks
+- **Privacy Leakage**: Differential privacy accounting
 
 ## Quick Start
 ```bash
-python audit.py --model model.pt --suite all --report report.html
+python audit.py --model model.pt --suite robustness --report report.html
 ```
 
-## License
-MIT
+## Output
+Generates detailed HTML report with severity scores, attack success rates, and remediation recommendations.
+
+## License: MIT
